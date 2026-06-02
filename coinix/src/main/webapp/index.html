@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coinix - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div style="max-width: 400px; margin: 80px auto; text-align: center;">
+        <h1>Coinix</h1>
+        <p style="margin-bottom: 24px; color: #aaa;">Controle seus gastos com inteligência</p>
+
+        <div id="msg-erro" style="display:none; background:#3a0000; border:1px solid #ff0000; padding:10px; border-radius:5px; margin-bottom:15px; color:#ff6666;">
+            E-mail ou senha incorretos.
+        </div>
+        <div id="msg-ok" style="display:none; background:#003a1a; border:1px solid #00cc66; padding:10px; border-radius:5px; margin-bottom:15px; color:#66ffaa;">
+            Cadastro realizado! Faça login.
+        </div>
+
+        <form action="login" method="post">
+            <div style="margin-bottom: 6px; text-align:left; color:#66bbff; font-weight:600;">E-mail</div>
+            <input class="Nome" type="email" name="email" required placeholder="seu@email.com"
+                   style="background:#2a2a2a; color:#fff;"><br>
+
+            <div style="margin-bottom: 6px; text-align:left; color:#66bbff; font-weight:600;">Senha</div>
+            <input class="Nome" type="password" name="senha" required placeholder="••••••••"
+                   style="background:#2a2a2a; color:#fff;"><br>
+
+            <button type="submit" class="Botao1" style="width:100%; margin-top:8px;">Entrar</button>
+        </form>
+
+        <p style="margin-top: 20px; color: #aaa; font-size: .9em;">
+            Não tem conta? <a href="cadastro.html" style="color:#66bbff; font-weight:700;">Cadastre-se</a>
+        </p>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

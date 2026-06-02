@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coinix - Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div style="max-width: 400px; margin: 80px auto; text-align: center;">
+        <h1>Criar Conta</h1>
+        <p style="margin-bottom: 24px; color: #aaa;">Comece a controlar seus gastos hoje</p>
+
+        <div id="msg-erro-email" style="display:none; background:#3a0000; border:1px solid #ff0000; padding:10px; border-radius:5px; margin-bottom:15px; color:#ff6666;">
+            Este e-mail já está cadastrado.
+        </div>
+        <div id="msg-erro-geral" style="display:none; background:#3a0000; border:1px solid #ff0000; padding:10px; border-radius:5px; margin-bottom:15px; color:#ff6666;">
+            Erro ao cadastrar. Tente novamente.
+        </div>
+
+        <form action="cadastro" method="post">
+            <div style="margin-bottom: 6px; text-align:left; color:#66bbff; font-weight:600;">Nome completo</div>
+            <input class="Nome" type="text" name="nome" required placeholder="Seu nome"
+                   style="background:#2a2a2a; color:#fff;"><br>
+
+            <div style="margin-bottom: 6px; text-align:left; color:#66bbff; font-weight:600;">E-mail</div>
+            <input class="Nome" type="email" name="email" required placeholder="seu@email.com"
+                   style="background:#2a2a2a; color:#fff;"><br>
+
+            <div style="margin-bottom: 6px; text-align:left; color:#66bbff; font-weight:600;">Senha</div>
+            <input class="Nome" type="password" name="senha" required minlength="6" placeholder="Mínimo 6 caracteres"
+                   style="background:#2a2a2a; color:#fff;"><br>
+
+            <button type="submit" class="Botao1" style="width:100%; margin-top:8px;">Criar conta</button>
+        </form>
+
+        <p style="margin-top: 20px; color: #aaa; font-size: .9em;">
+            Já tem conta? <a href="index.html" style="color:#66bbff; font-weight:700;">Entrar</a>
+        </p>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
