@@ -34,7 +34,7 @@ O ecossistema do projeto é baseado em tecnologias robustas para garantir desemp
 
 - [x] Planejamento da arquitetura de software e design de telas.
 - [x] Implementação das classes de modelo (Usuário, Transação, Categoria).
-- [ ] Integração com o banco de dados.
+- [x] Integração com o banco de dados.
 
 ---
 
